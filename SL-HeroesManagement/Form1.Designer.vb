@@ -203,7 +203,7 @@
         Me.DslGrid1.Size = New System.Drawing.Size(75, 23)
         Me.DslGrid1.SetSLDBNav(Me.DslGrid1, """select * from xtHeroArsenal where cpnyid = @parm1 and HeroID = @parm2 and ID lik" &
         "e @parm3"", ""bpes.cpnyID""; 0; 0; 0; 0, ""bxtHero.ID""; 0; 0; 0; 0, ""bxtHeroArsenal." &
-        "ID""; 0; 0; 0; 1, ")
+        "ID""; 0; 0; 0; 1, " & Global.Microsoft.VisualBasic.ChrW(0))
         Me.DslGrid1.TabIndex = 2
         '
         'TableLayoutPanel2
@@ -211,7 +211,7 @@
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.73913!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.26087!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 111.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label4, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label5, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label6, 0, 2)
@@ -280,61 +280,61 @@
         '
         Me.tArsenalID_1.Blankerr = True
         Me.tArsenalID_1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tArsenalID_1.FieldName = """xtHeroArsenal.ID""; 0; 0; 0"
+        Me.tArsenalID_1.FieldName = """bxtHeroArsenal.ID""; 0; 0; 0"
         Me.tArsenalID_1.Heading = "Arsenal ID"
         Me.tArsenalID_1.Level = "1,k"
         Me.tArsenalID_1.Location = New System.Drawing.Point(111, 3)
         Me.tArsenalID_1.Mask = "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
         Me.tArsenalID_1.Name = "tArsenalID_1"
-        Me.tArsenalID_1.Size = New System.Drawing.Size(228, 56)
+        Me.tArsenalID_1.Size = New System.Drawing.Size(227, 56)
         Me.tArsenalID_1.TabIndex = 4
         Me.tArsenalID_1.TextLength = 30
         '
         'tArsenalDescr_1
         '
         Me.tArsenalDescr_1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tArsenalDescr_1.FieldName = """xtHeroArsenal.Description""; 0; 0; 0"
+        Me.tArsenalDescr_1.FieldName = """bxtHeroArsenal.Description""; 0; 0; 0"
         Me.tArsenalDescr_1.Heading = "Description"
         Me.tArsenalDescr_1.Level = "1"
         Me.tArsenalDescr_1.Location = New System.Drawing.Point(111, 65)
         Me.tArsenalDescr_1.Mask = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
         Me.tArsenalDescr_1.Name = "tArsenalDescr_1"
-        Me.tArsenalDescr_1.Size = New System.Drawing.Size(228, 56)
+        Me.tArsenalDescr_1.Size = New System.Drawing.Size(227, 56)
         Me.tArsenalDescr_1.TabIndex = 5
         Me.tArsenalDescr_1.TextLength = 60
         '
         'tArsenalProdClassID_1
         '
         Me.tArsenalProdClassID_1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tArsenalProdClassID_1.FieldName = """xtHeroArsenal.ProdClassID""; 0; 0; 0"
+        Me.tArsenalProdClassID_1.FieldName = """bxtHeroArsenal.ProdClassID""; 0; 0; 0"
         Me.tArsenalProdClassID_1.Heading = "Product Class ID"
         Me.tArsenalProdClassID_1.Level = "1"
         Me.tArsenalProdClassID_1.Location = New System.Drawing.Point(111, 127)
         Me.tArsenalProdClassID_1.Mask = "UUUUUU"
         Me.tArsenalProdClassID_1.Name = "tArsenalProdClassID_1"
-        Me.tArsenalProdClassID_1.Size = New System.Drawing.Size(228, 46)
+        Me.tArsenalProdClassID_1.Size = New System.Drawing.Size(227, 46)
         Me.tArsenalProdClassID_1.TabIndex = 6
         Me.tArsenalProdClassID_1.TextLength = 6
         '
         'tArsenalUOM_1
         '
         Me.tArsenalUOM_1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tArsenalUOM_1.FieldName = """xtHeroArsenal.UOM""; 0; 0; 0"
+        Me.tArsenalUOM_1.FieldName = """bxtHeroArsenal.UOM""; 0; 0; 0"
         Me.tArsenalUOM_1.Level = "1"
         Me.tArsenalUOM_1.Location = New System.Drawing.Point(111, 179)
         Me.tArsenalUOM_1.Mask = "UUUUUU"
         Me.tArsenalUOM_1.Name = "tArsenalUOM_1"
-        Me.tArsenalUOM_1.Size = New System.Drawing.Size(228, 50)
+        Me.tArsenalUOM_1.Size = New System.Drawing.Size(227, 50)
         Me.tArsenalUOM_1.TabIndex = 7
         Me.tArsenalUOM_1.TextLength = 6
         '
         'tArsenalHeroID_1
         '
-        Me.tArsenalHeroID_1.FieldName = """xtHeroArsenal.HeroID""; 0; 0; 0"
+        Me.tArsenalHeroID_1.FieldName = """bxtHeroArsenal.HeroID""; 0; 0; 0"
         Me.tArsenalHeroID_1.Heading = "Hero ID"
         Me.tArsenalHeroID_1.InGrid = False
         Me.tArsenalHeroID_1.Level = "1,k"
-        Me.tArsenalHeroID_1.Location = New System.Drawing.Point(345, 3)
+        Me.tArsenalHeroID_1.Location = New System.Drawing.Point(344, 3)
         Me.tArsenalHeroID_1.Mask = "UUUUUUUUUU"
         Me.tArsenalHeroID_1.Name = "tArsenalHeroID_1"
         Me.tArsenalHeroID_1.Size = New System.Drawing.Size(94, 20)
