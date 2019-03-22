@@ -152,10 +152,11 @@
         Me.DslMaskedText1.FieldName = """bxtHero.ID""; 0; 0; 0"
         Me.DslMaskedText1.Level = "0,k"
         Me.DslMaskedText1.Location = New System.Drawing.Point(77, 3)
+        Me.DslMaskedText1.Mask = "UUUUUUUUUU"
         Me.DslMaskedText1.Name = "DslMaskedText1"
         Me.DslMaskedText1.Size = New System.Drawing.Size(374, 37)
         Me.DslMaskedText1.TabIndex = 3
-        Me.DslMaskedText1.TextLength = 0
+        Me.DslMaskedText1.TextLength = 10
         '
         'DslMaskedText2
         '
@@ -163,10 +164,11 @@
         Me.DslMaskedText2.Enabled = False
         Me.DslMaskedText2.FieldName = """bxtHero.Name""; 0; 0; 0"
         Me.DslMaskedText2.Location = New System.Drawing.Point(77, 46)
+        Me.DslMaskedText2.Mask = "XXXXXXXXXXX"
         Me.DslMaskedText2.Name = "DslMaskedText2"
         Me.DslMaskedText2.Size = New System.Drawing.Size(374, 37)
         Me.DslMaskedText2.TabIndex = 4
-        Me.DslMaskedText2.TextLength = 0
+        Me.DslMaskedText2.TextLength = 11
         '
         'DslCombo1
         '
@@ -174,6 +176,7 @@
         Me.DslCombo1.Enabled = False
         Me.DslCombo1.FieldName = """bxtHero.Type""; 0; 0; 0"
         Me.DslCombo1.FormattingEnabled = True
+        Me.DslCombo1.List = "W;Wizard,K;Knight,B;Barbarian,T;Thief"
         Me.DslCombo1.Location = New System.Drawing.Point(77, 89)
         Me.DslCombo1.Name = "DslCombo1"
         Me.DslCombo1.Size = New System.Drawing.Size(374, 21)
@@ -181,8 +184,8 @@
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.TableLayoutPanel2)
         Me.GroupBox2.Controls.Add(Me.DslGrid1)
+        Me.GroupBox2.Controls.Add(Me.TableLayoutPanel2)
         Me.GroupBox2.Location = New System.Drawing.Point(13, 168)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(460, 252)
@@ -195,7 +198,7 @@
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.73913!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.26087!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label4, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label5, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label6, 0, 2)
@@ -211,8 +214,8 @@
         Me.TableLayoutPanel2.RowCount = 4
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43.0!))
-        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 52.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55.0!))
         Me.TableLayoutPanel2.Size = New System.Drawing.Size(454, 232)
         Me.TableLayoutPanel2.TabIndex = 1
         '
@@ -222,7 +225,7 @@
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label4.Location = New System.Drawing.Point(3, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(106, 73)
+        Me.Label4.Size = New System.Drawing.Size(104, 62)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Arsenal ID"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -231,9 +234,9 @@
         '
         Me.Label5.AutoSize = True
         Me.Label5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label5.Location = New System.Drawing.Point(3, 73)
+        Me.Label5.Location = New System.Drawing.Point(3, 62)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(106, 73)
+        Me.Label5.Size = New System.Drawing.Size(104, 62)
         Me.Label5.TabIndex = 1
         Me.Label5.Text = "Description"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -242,9 +245,9 @@
         '
         Me.Label6.AutoSize = True
         Me.Label6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label6.Location = New System.Drawing.Point(3, 146)
+        Me.Label6.Location = New System.Drawing.Point(3, 124)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(106, 43)
+        Me.Label6.Size = New System.Drawing.Size(104, 52)
         Me.Label6.TabIndex = 2
         Me.Label6.Text = "Product Class ID"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -253,9 +256,9 @@
         '
         Me.Label7.AutoSize = True
         Me.Label7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label7.Location = New System.Drawing.Point(3, 189)
+        Me.Label7.Location = New System.Drawing.Point(3, 176)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(106, 43)
+        Me.Label7.Size = New System.Drawing.Size(104, 56)
         Me.Label7.TabIndex = 3
         Me.Label7.Text = "Unit of Measure"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -265,63 +268,76 @@
         Me.DslMaskedText4.Blankerr = True
         Me.DslMaskedText4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DslMaskedText4.FieldName = """xtHeroArsenal.ID""; 0; 0; 0"
-        Me.DslMaskedText4.Level = "1"
-        Me.DslMaskedText4.Location = New System.Drawing.Point(115, 3)
+        Me.DslMaskedText4.Heading = "Arsenal ID"
+        Me.DslMaskedText4.Level = "1,k"
+        Me.DslMaskedText4.Location = New System.Drawing.Point(113, 3)
+        Me.DslMaskedText4.Mask = "UUUUUUUUUUUUUUUUUUUU"
         Me.DslMaskedText4.Name = "DslMaskedText4"
-        Me.DslMaskedText4.Size = New System.Drawing.Size(235, 67)
+        Me.DslMaskedText4.Size = New System.Drawing.Size(232, 56)
         Me.DslMaskedText4.TabIndex = 4
-        Me.DslMaskedText4.TextLength = 0
+        Me.DslMaskedText4.TextLength = 20
         '
         'DslMaskedText5
         '
         Me.DslMaskedText5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DslMaskedText5.FieldName = """xtHeroArsenal.Description""; 0; 0; 0"
+        Me.DslMaskedText5.Heading = "Description"
         Me.DslMaskedText5.Level = "1"
-        Me.DslMaskedText5.Location = New System.Drawing.Point(115, 76)
+        Me.DslMaskedText5.Location = New System.Drawing.Point(113, 65)
+        Me.DslMaskedText5.Mask = "XXXXXXXXXX"
         Me.DslMaskedText5.Name = "DslMaskedText5"
-        Me.DslMaskedText5.Size = New System.Drawing.Size(235, 67)
+        Me.DslMaskedText5.Size = New System.Drawing.Size(232, 56)
         Me.DslMaskedText5.TabIndex = 5
-        Me.DslMaskedText5.TextLength = 0
+        Me.DslMaskedText5.TextLength = 10
         '
         'DslMaskedText3
         '
         Me.DslMaskedText3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DslMaskedText3.FieldName = """xtHeroArsenal.ProdClassID""; 0; 0; 0"
+        Me.DslMaskedText3.Heading = "Product Class ID"
         Me.DslMaskedText3.Level = "1"
-        Me.DslMaskedText3.Location = New System.Drawing.Point(115, 149)
+        Me.DslMaskedText3.Location = New System.Drawing.Point(113, 127)
+        Me.DslMaskedText3.Mask = "UUUUUU"
         Me.DslMaskedText3.Name = "DslMaskedText3"
-        Me.DslMaskedText3.Size = New System.Drawing.Size(235, 37)
+        Me.DslMaskedText3.Size = New System.Drawing.Size(232, 46)
         Me.DslMaskedText3.TabIndex = 6
-        Me.DslMaskedText3.TextLength = 0
+        Me.DslMaskedText3.TextLength = 6
         '
         'DslMaskedText6
         '
         Me.DslMaskedText6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DslMaskedText6.FieldName = """xtHeroArsenal.UOM""; 0; 0; 0"
         Me.DslMaskedText6.Level = "1"
-        Me.DslMaskedText6.Location = New System.Drawing.Point(115, 192)
+        Me.DslMaskedText6.Location = New System.Drawing.Point(113, 179)
+        Me.DslMaskedText6.Mask = "UUUUUU"
         Me.DslMaskedText6.Name = "DslMaskedText6"
-        Me.DslMaskedText6.Size = New System.Drawing.Size(235, 37)
+        Me.DslMaskedText6.Size = New System.Drawing.Size(232, 50)
         Me.DslMaskedText6.TabIndex = 7
-        Me.DslMaskedText6.TextLength = 0
+        Me.DslMaskedText6.TextLength = 6
         '
         'DslMaskedText7
         '
         Me.DslMaskedText7.FieldName = """xtHeroArsenal.HeroID""; 0; 0; 0"
-        Me.DslMaskedText7.Level = "1"
-        Me.DslMaskedText7.Location = New System.Drawing.Point(356, 3)
+        Me.DslMaskedText7.Heading = "Hero ID"
+        Me.DslMaskedText7.InGrid = False
+        Me.DslMaskedText7.Level = "1,k"
+        Me.DslMaskedText7.Location = New System.Drawing.Point(351, 3)
+        Me.DslMaskedText7.Mask = "UUUUUUUUUU"
         Me.DslMaskedText7.Name = "DslMaskedText7"
         Me.DslMaskedText7.Size = New System.Drawing.Size(94, 20)
         Me.DslMaskedText7.TabIndex = 8
-        Me.DslMaskedText7.TextLength = 0
+        Me.DslMaskedText7.TextLength = 10
         '
         'DslGrid1
         '
-        Me.DslGrid1.Location = New System.Drawing.Point(360, 214)
+        Me.DslGrid1.Location = New System.Drawing.Point(272, 8)
         Me.DslGrid1.Name = "DslGrid1"
         Me.DslGrid1.OcxState = CType(resources.GetObject("DslGrid1.OcxState"), System.Windows.Forms.AxHost.State)
         Me.DslGrid1.Size = New System.Drawing.Size(75, 23)
-        Me.DslGrid1.TabIndex = 0
+        Me.DslGrid1.SetSLDBNav(Me.DslGrid1, """select * from xtHeroArsenal where cpnyid = @parm1 and HeroID = @parm2 and ID lik" &
+        "e @parm3"", ""bpes.cpnyID""; 0; 0; 0; 0, ""bxtHero.ID""; 0; 0; 0; 0, ""bxtHeroArsenal." &
+        "ID""; 0; 0; 0; 1, ")
+        Me.DslGrid1.TabIndex = 2
         '
         'Form1
         '
@@ -337,7 +353,7 @@
         Me.Location = New System.Drawing.Point(4, 23)
         Me.Name = "Form1"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Text = "Hero Arsenal Maintenance (TS.HERO.001)"
+        Me.Text = "Hero Arsenal Maintenance (TS.HERO.002)"
         CType(Me.Update1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
@@ -366,9 +382,9 @@
     Friend WithEvents DslMaskedText4 As Microsoft.Dynamics.SL.Controls.DSLMaskedText
     Friend WithEvents DslMaskedText5 As Microsoft.Dynamics.SL.Controls.DSLMaskedText
     Friend WithEvents DslCombo1 As Microsoft.Dynamics.SL.Controls.DSLCombo
-    Friend WithEvents DslGrid1 As Microsoft.Dynamics.SL.Controls.DSLGrid
     Friend WithEvents DslMaskedText3 As Microsoft.Dynamics.SL.Controls.DSLMaskedText
     Friend WithEvents DslMaskedText6 As Microsoft.Dynamics.SL.Controls.DSLMaskedText
     Friend WithEvents DslMaskedText7 As Microsoft.Dynamics.SL.Controls.DSLMaskedText
+    Friend WithEvents DslGrid1 As Microsoft.Dynamics.SL.Controls.DSLGrid
 #End Region
 End Class

@@ -69,6 +69,13 @@ Module sdoxthero
             End Set
 
         End Property
+
+        Public Overrides Function ToString() As String
+            Return TableName
+        End Function
+
+        Private Const DBName As String = "xtHero"
+        Private Const TableName As String = "bxtHero"
     End Class
     Public bxthero As xthero = New xthero, nxthero As xthero = New xthero
     Public Csr_xthero As Integer, Mem_xthero As Integer

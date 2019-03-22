@@ -22,32 +22,18 @@ Friend Class Form1
 
     Private Sub Form1_Load(ByVal eventSender As System.Object, ByVal eventArgs As System.EventArgs) Handles MyBase.Load
 
-        ' Load all the forms needed for this application
-        'Call LoadForm(fSL01001)
-
-        ' Initialize the application as a Microsoft Dynamics SL Application
         Call ApplInit()
 
+        Call SetAddr(LEVEL0, "bxtHero", bxthero, nxthero)
+        Call SetAddr(LEVEL1, "bxtHeroArsenal", bxtHeroArsenal, nxtHeroArsenal)
+        Call SetAddr(NOLEVEL, "bInventory", bInventory, nInventory)
 
-        ' Call Set Address for the tables that will have fields displayed on the scree,
-        ' or that you would like customization manager to be able to use
-        'Call SetAddr(LEVEL0, "bxSLSample", bxSLSample, nxSLSample)
+        Call SqlCursorEx(Csr_xthero, LEVEL0, "Csr_xthero", "bxthero", "bxthero")
+        Call SqlCursorEx(Csr_xtHeroArsenal, LEVEL1, "Csr_xtHeroArsenal", "bxtHeroArsenal", "bxtHeroArsenal")
+        Call SqlCursorEx(Csr_Inventory, NOLEVEL, "Csr_Inventory", "bxtInventory", "bxtInventory")
 
-        ' Define the cursors that are used by the application
-
-        ' This is an example for a table in the System Database
-        'Call SqlCursor(c1, LEVEL0 + SqlSystemDb)
-
-        ' This is an example for a table in an Application Database
-        'Call SqlCursor(c1, LEVEL0 )
-
-
-        ' Call the screen init function
         Call ScreenInit()
-
-
-
-
+        'Mem_xtHeroArsenal = DetailSetup(Csr_xtHeroArsenal, DslGrid1, PNULL, bxtHeroArsenal, PNULL, PNULL, PNULL)
     End Sub
 
     Private Sub Form1_FormClosed(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.FormClosedEventArgs) Handles Me.FormClosed
