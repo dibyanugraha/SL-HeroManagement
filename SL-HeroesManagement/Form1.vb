@@ -25,22 +25,24 @@ Friend Class Form1
         Call ApplInit()
 
         Call SetAddr(LEVEL0, "bxtHero", bxthero, nxthero)
-        Call SetAddr(LEVEL1, "bxtHeroArsenal", bxtHeroArsenal, nxtHeroArsenal)
-        Call SetAddr(NOLEVEL, "bInventory", bInventory, nInventory)
+        'Call SetAddr(LEVEL1, "bxtHeroArsenal", bxtHeroArsenal, nxtHeroArsenal)
+        'Call SetAddr(NOLEVEL, "bInventory", bInventory, nInventory)
 
         Call SqlCursorEx(Csr_xthero, LEVEL0, "Csr_xthero", "bxthero", "bxthero")
-        Call SqlCursorEx(Csr_xtHeroArsenal, LEVEL1, "Csr_xtHeroArsenal", "bxtHeroArsenal", "bxtHeroArsenal")
-        Call SqlCursorEx(Csr_Inventory, NOLEVEL, "Csr_Inventory", "bxtInventory", "bxtInventory")
+        'Call SqlCursorEx(Csr_xtHeroArsenal, LEVEL1, "Csr_xtHeroArsenal", "bxtHeroArsenal", "bxtHeroArsenal")
+        'Call SqlCursorEx(Csr_Inventory, NOLEVEL, "Csr_Inventory", "bxtInventory", "bxtInventory")
 
         Call ScreenInit()
-        'Mem_xtHeroArsenal = DetailSetup(Csr_xtHeroArsenal, DslGrid1, PNULL, bxtHeroArsenal, PNULL, PNULL, PNULL)
+        Mem_xtHeroArsenal = DetailSetup(Csr_xtHeroArsenal, DslGrid1, PNULL, bxtHeroArsenal, PNULL, PNULL, PNULL)
     End Sub
 
     Private Sub Form1_FormClosed(ByVal eventSender As System.Object, ByVal eventArgs As System.Windows.Forms.FormClosedEventArgs) Handles Me.FormClosed
 
-        'Standard Screen Exit Call
         Call ScreenExit("", "")
 
     End Sub
 
+    Private Sub Form1_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
+        'Call SetProps(Me, cHeroType_0, cHeroType_0, PROP_CUSTLIST, "W;Wizard,K;Knight,B;Barbarian,T;Thief")
+    End Sub
 End Class

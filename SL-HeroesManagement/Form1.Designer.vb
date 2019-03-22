@@ -44,27 +44,27 @@
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.DslMaskedText1 = New Microsoft.Dynamics.SL.Controls.DSLMaskedText()
-        Me.DslMaskedText2 = New Microsoft.Dynamics.SL.Controls.DSLMaskedText()
-        Me.DslCombo1 = New Microsoft.Dynamics.SL.Controls.DSLCombo()
+        Me.tHeroID_0 = New Microsoft.Dynamics.SL.Controls.DSLMaskedText()
+        Me.tHeroName_0 = New Microsoft.Dynamics.SL.Controls.DSLMaskedText()
+        Me.cHeroType_0 = New Microsoft.Dynamics.SL.Controls.DSLCombo()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.DslGrid1 = New Microsoft.Dynamics.SL.Controls.DSLGrid()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.DslMaskedText4 = New Microsoft.Dynamics.SL.Controls.DSLMaskedText()
-        Me.DslMaskedText5 = New Microsoft.Dynamics.SL.Controls.DSLMaskedText()
-        Me.DslMaskedText3 = New Microsoft.Dynamics.SL.Controls.DSLMaskedText()
-        Me.DslMaskedText6 = New Microsoft.Dynamics.SL.Controls.DSLMaskedText()
-        Me.DslMaskedText7 = New Microsoft.Dynamics.SL.Controls.DSLMaskedText()
-        Me.DslGrid1 = New Microsoft.Dynamics.SL.Controls.DSLGrid()
+        Me.tArsenalID_1 = New Microsoft.Dynamics.SL.Controls.DSLMaskedText()
+        Me.tArsenalDescr_1 = New Microsoft.Dynamics.SL.Controls.DSLMaskedText()
+        Me.tArsenalProdClassID_1 = New Microsoft.Dynamics.SL.Controls.DSLMaskedText()
+        Me.tArsenalUOM_1 = New Microsoft.Dynamics.SL.Controls.DSLMaskedText()
+        Me.tArsenalHeroID_1 = New Microsoft.Dynamics.SL.Controls.DSLMaskedText()
         CType(Me.Update1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
-        Me.TableLayoutPanel2.SuspendLayout()
         CType(Me.DslGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TableLayoutPanel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Update1
@@ -84,6 +84,8 @@
         '
         'GroupBox1
         '
+        Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.Controls.Add(Me.TableLayoutPanel1)
         Me.GroupBox1.Location = New System.Drawing.Point(13, 12)
         Me.GroupBox1.Name = "GroupBox1"
@@ -99,9 +101,9 @@
         Me.TableLayoutPanel1.Controls.Add(Me.Label1, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Label2, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Label3, 0, 2)
-        Me.TableLayoutPanel1.Controls.Add(Me.DslMaskedText1, 1, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.DslMaskedText2, 1, 1)
-        Me.TableLayoutPanel1.Controls.Add(Me.DslCombo1, 1, 2)
+        Me.TableLayoutPanel1.Controls.Add(Me.tHeroID_0, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.tHeroName_0, 1, 1)
+        Me.TableLayoutPanel1.Controls.Add(Me.cHeroType_0, 1, 2)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(3, 17)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -145,45 +147,45 @@
         Me.Label3.Text = "Hero Type"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'DslMaskedText1
+        'tHeroID_0
         '
-        Me.DslMaskedText1.Blankerr = True
-        Me.DslMaskedText1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DslMaskedText1.FieldName = """bxtHero.ID""; 0; 0; 0"
-        Me.DslMaskedText1.Level = "0,k"
-        Me.DslMaskedText1.Location = New System.Drawing.Point(77, 3)
-        Me.DslMaskedText1.Mask = "UUUUUUUUUU"
-        Me.DslMaskedText1.Name = "DslMaskedText1"
-        Me.DslMaskedText1.Size = New System.Drawing.Size(374, 37)
-        Me.DslMaskedText1.TabIndex = 3
-        Me.DslMaskedText1.TextLength = 10
+        Me.tHeroID_0.Blankerr = True
+        Me.tHeroID_0.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tHeroID_0.FieldName = """bxtHero.ID""; 0; 0; 0"
+        Me.tHeroID_0.Level = "0,k"
+        Me.tHeroID_0.Location = New System.Drawing.Point(77, 3)
+        Me.tHeroID_0.Mask = "UUUUUUUUUU"
+        Me.tHeroID_0.Name = "tHeroID_0"
+        Me.tHeroID_0.Size = New System.Drawing.Size(374, 37)
+        Me.tHeroID_0.TabIndex = 3
+        Me.tHeroID_0.TextLength = 10
         '
-        'DslMaskedText2
+        'tHeroName_0
         '
-        Me.DslMaskedText2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DslMaskedText2.Enabled = False
-        Me.DslMaskedText2.FieldName = """bxtHero.Name""; 0; 0; 0"
-        Me.DslMaskedText2.Location = New System.Drawing.Point(77, 46)
-        Me.DslMaskedText2.Mask = "XXXXXXXXXXX"
-        Me.DslMaskedText2.Name = "DslMaskedText2"
-        Me.DslMaskedText2.Size = New System.Drawing.Size(374, 37)
-        Me.DslMaskedText2.TabIndex = 4
-        Me.DslMaskedText2.TextLength = 11
+        Me.tHeroName_0.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tHeroName_0.FieldName = """bxtHero.Name""; 0; 0; 0"
+        Me.tHeroName_0.Location = New System.Drawing.Point(77, 46)
+        Me.tHeroName_0.Mask = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        Me.tHeroName_0.Name = "tHeroName_0"
+        Me.tHeroName_0.Size = New System.Drawing.Size(374, 37)
+        Me.tHeroName_0.TabIndex = 4
+        Me.tHeroName_0.TextLength = 50
         '
-        'DslCombo1
+        'cHeroType_0
         '
-        Me.DslCombo1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DslCombo1.Enabled = False
-        Me.DslCombo1.FieldName = """bxtHero.Type""; 0; 0; 0"
-        Me.DslCombo1.FormattingEnabled = True
-        Me.DslCombo1.List = "W;Wizard,K;Knight,B;Barbarian,T;Thief"
-        Me.DslCombo1.Location = New System.Drawing.Point(77, 89)
-        Me.DslCombo1.Name = "DslCombo1"
-        Me.DslCombo1.Size = New System.Drawing.Size(374, 21)
-        Me.DslCombo1.TabIndex = 6
+        Me.cHeroType_0.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.cHeroType_0.FieldName = """bxtHero.Type""; 0; 0; 0"
+        Me.cHeroType_0.FormattingEnabled = True
+        Me.cHeroType_0.List = "W;Wizard,K;Knight,B;Barbarian,T;Thief"
+        Me.cHeroType_0.Location = New System.Drawing.Point(77, 89)
+        Me.cHeroType_0.Name = "cHeroType_0"
+        Me.cHeroType_0.Size = New System.Drawing.Size(374, 21)
+        Me.cHeroType_0.TabIndex = 6
         '
         'GroupBox2
         '
+        Me.GroupBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox2.Controls.Add(Me.DslGrid1)
         Me.GroupBox2.Controls.Add(Me.TableLayoutPanel2)
         Me.GroupBox2.Location = New System.Drawing.Point(13, 168)
@@ -193,21 +195,32 @@
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Press F4 for details"
         '
+        'DslGrid1
+        '
+        Me.DslGrid1.Location = New System.Drawing.Point(272, 8)
+        Me.DslGrid1.Name = "DslGrid1"
+        Me.DslGrid1.OcxState = CType(resources.GetObject("DslGrid1.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.DslGrid1.Size = New System.Drawing.Size(75, 23)
+        Me.DslGrid1.SetSLDBNav(Me.DslGrid1, """select * from xtHeroArsenal where cpnyid = @parm1 and HeroID = @parm2 and ID lik" &
+        "e @parm3"", ""bpes.cpnyID""; 0; 0; 0; 0, ""bxtHero.ID""; 0; 0; 0; 0, ""bxtHeroArsenal." &
+        "ID""; 0; 0; 0; 1, ")
+        Me.DslGrid1.TabIndex = 2
+        '
         'TableLayoutPanel2
         '
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.73913!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.26087!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 111.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label4, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label5, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label6, 0, 2)
         Me.TableLayoutPanel2.Controls.Add(Me.Label7, 0, 3)
-        Me.TableLayoutPanel2.Controls.Add(Me.DslMaskedText4, 1, 0)
-        Me.TableLayoutPanel2.Controls.Add(Me.DslMaskedText5, 1, 1)
-        Me.TableLayoutPanel2.Controls.Add(Me.DslMaskedText3, 1, 2)
-        Me.TableLayoutPanel2.Controls.Add(Me.DslMaskedText6, 1, 3)
-        Me.TableLayoutPanel2.Controls.Add(Me.DslMaskedText7, 2, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.tArsenalID_1, 1, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.tArsenalDescr_1, 1, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.tArsenalProdClassID_1, 1, 2)
+        Me.TableLayoutPanel2.Controls.Add(Me.tArsenalUOM_1, 1, 3)
+        Me.TableLayoutPanel2.Controls.Add(Me.tArsenalHeroID_1, 2, 0)
         Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 17)
         Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
@@ -225,7 +238,7 @@
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label4.Location = New System.Drawing.Point(3, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(104, 62)
+        Me.Label4.Size = New System.Drawing.Size(102, 62)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Arsenal ID"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -236,7 +249,7 @@
         Me.Label5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label5.Location = New System.Drawing.Point(3, 62)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(104, 62)
+        Me.Label5.Size = New System.Drawing.Size(102, 62)
         Me.Label5.TabIndex = 1
         Me.Label5.Text = "Description"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -247,7 +260,7 @@
         Me.Label6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label6.Location = New System.Drawing.Point(3, 124)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(104, 52)
+        Me.Label6.Size = New System.Drawing.Size(102, 52)
         Me.Label6.TabIndex = 2
         Me.Label6.Text = "Product Class ID"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -258,86 +271,75 @@
         Me.Label7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label7.Location = New System.Drawing.Point(3, 176)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(104, 56)
+        Me.Label7.Size = New System.Drawing.Size(102, 56)
         Me.Label7.TabIndex = 3
         Me.Label7.Text = "Unit of Measure"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
-        'DslMaskedText4
+        'tArsenalID_1
         '
-        Me.DslMaskedText4.Blankerr = True
-        Me.DslMaskedText4.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DslMaskedText4.FieldName = """xtHeroArsenal.ID""; 0; 0; 0"
-        Me.DslMaskedText4.Heading = "Arsenal ID"
-        Me.DslMaskedText4.Level = "1,k"
-        Me.DslMaskedText4.Location = New System.Drawing.Point(113, 3)
-        Me.DslMaskedText4.Mask = "UUUUUUUUUUUUUUUUUUUU"
-        Me.DslMaskedText4.Name = "DslMaskedText4"
-        Me.DslMaskedText4.Size = New System.Drawing.Size(232, 56)
-        Me.DslMaskedText4.TabIndex = 4
-        Me.DslMaskedText4.TextLength = 20
+        Me.tArsenalID_1.Blankerr = True
+        Me.tArsenalID_1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tArsenalID_1.FieldName = """xtHeroArsenal.ID""; 0; 0; 0"
+        Me.tArsenalID_1.Heading = "Arsenal ID"
+        Me.tArsenalID_1.Level = "1,k"
+        Me.tArsenalID_1.Location = New System.Drawing.Point(111, 3)
+        Me.tArsenalID_1.Mask = "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
+        Me.tArsenalID_1.Name = "tArsenalID_1"
+        Me.tArsenalID_1.Size = New System.Drawing.Size(228, 56)
+        Me.tArsenalID_1.TabIndex = 4
+        Me.tArsenalID_1.TextLength = 30
         '
-        'DslMaskedText5
+        'tArsenalDescr_1
         '
-        Me.DslMaskedText5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DslMaskedText5.FieldName = """xtHeroArsenal.Description""; 0; 0; 0"
-        Me.DslMaskedText5.Heading = "Description"
-        Me.DslMaskedText5.Level = "1"
-        Me.DslMaskedText5.Location = New System.Drawing.Point(113, 65)
-        Me.DslMaskedText5.Mask = "XXXXXXXXXX"
-        Me.DslMaskedText5.Name = "DslMaskedText5"
-        Me.DslMaskedText5.Size = New System.Drawing.Size(232, 56)
-        Me.DslMaskedText5.TabIndex = 5
-        Me.DslMaskedText5.TextLength = 10
+        Me.tArsenalDescr_1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tArsenalDescr_1.FieldName = """xtHeroArsenal.Description""; 0; 0; 0"
+        Me.tArsenalDescr_1.Heading = "Description"
+        Me.tArsenalDescr_1.Level = "1"
+        Me.tArsenalDescr_1.Location = New System.Drawing.Point(111, 65)
+        Me.tArsenalDescr_1.Mask = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        Me.tArsenalDescr_1.Name = "tArsenalDescr_1"
+        Me.tArsenalDescr_1.Size = New System.Drawing.Size(228, 56)
+        Me.tArsenalDescr_1.TabIndex = 5
+        Me.tArsenalDescr_1.TextLength = 60
         '
-        'DslMaskedText3
+        'tArsenalProdClassID_1
         '
-        Me.DslMaskedText3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DslMaskedText3.FieldName = """xtHeroArsenal.ProdClassID""; 0; 0; 0"
-        Me.DslMaskedText3.Heading = "Product Class ID"
-        Me.DslMaskedText3.Level = "1"
-        Me.DslMaskedText3.Location = New System.Drawing.Point(113, 127)
-        Me.DslMaskedText3.Mask = "UUUUUU"
-        Me.DslMaskedText3.Name = "DslMaskedText3"
-        Me.DslMaskedText3.Size = New System.Drawing.Size(232, 46)
-        Me.DslMaskedText3.TabIndex = 6
-        Me.DslMaskedText3.TextLength = 6
+        Me.tArsenalProdClassID_1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tArsenalProdClassID_1.FieldName = """xtHeroArsenal.ProdClassID""; 0; 0; 0"
+        Me.tArsenalProdClassID_1.Heading = "Product Class ID"
+        Me.tArsenalProdClassID_1.Level = "1"
+        Me.tArsenalProdClassID_1.Location = New System.Drawing.Point(111, 127)
+        Me.tArsenalProdClassID_1.Mask = "UUUUUU"
+        Me.tArsenalProdClassID_1.Name = "tArsenalProdClassID_1"
+        Me.tArsenalProdClassID_1.Size = New System.Drawing.Size(228, 46)
+        Me.tArsenalProdClassID_1.TabIndex = 6
+        Me.tArsenalProdClassID_1.TextLength = 6
         '
-        'DslMaskedText6
+        'tArsenalUOM_1
         '
-        Me.DslMaskedText6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DslMaskedText6.FieldName = """xtHeroArsenal.UOM""; 0; 0; 0"
-        Me.DslMaskedText6.Level = "1"
-        Me.DslMaskedText6.Location = New System.Drawing.Point(113, 179)
-        Me.DslMaskedText6.Mask = "UUUUUU"
-        Me.DslMaskedText6.Name = "DslMaskedText6"
-        Me.DslMaskedText6.Size = New System.Drawing.Size(232, 50)
-        Me.DslMaskedText6.TabIndex = 7
-        Me.DslMaskedText6.TextLength = 6
+        Me.tArsenalUOM_1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tArsenalUOM_1.FieldName = """xtHeroArsenal.UOM""; 0; 0; 0"
+        Me.tArsenalUOM_1.Level = "1"
+        Me.tArsenalUOM_1.Location = New System.Drawing.Point(111, 179)
+        Me.tArsenalUOM_1.Mask = "UUUUUU"
+        Me.tArsenalUOM_1.Name = "tArsenalUOM_1"
+        Me.tArsenalUOM_1.Size = New System.Drawing.Size(228, 50)
+        Me.tArsenalUOM_1.TabIndex = 7
+        Me.tArsenalUOM_1.TextLength = 6
         '
-        'DslMaskedText7
+        'tArsenalHeroID_1
         '
-        Me.DslMaskedText7.FieldName = """xtHeroArsenal.HeroID""; 0; 0; 0"
-        Me.DslMaskedText7.Heading = "Hero ID"
-        Me.DslMaskedText7.InGrid = False
-        Me.DslMaskedText7.Level = "1,k"
-        Me.DslMaskedText7.Location = New System.Drawing.Point(351, 3)
-        Me.DslMaskedText7.Mask = "UUUUUUUUUU"
-        Me.DslMaskedText7.Name = "DslMaskedText7"
-        Me.DslMaskedText7.Size = New System.Drawing.Size(94, 20)
-        Me.DslMaskedText7.TabIndex = 8
-        Me.DslMaskedText7.TextLength = 10
-        '
-        'DslGrid1
-        '
-        Me.DslGrid1.Location = New System.Drawing.Point(272, 8)
-        Me.DslGrid1.Name = "DslGrid1"
-        Me.DslGrid1.OcxState = CType(resources.GetObject("DslGrid1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.DslGrid1.Size = New System.Drawing.Size(75, 23)
-        Me.DslGrid1.SetSLDBNav(Me.DslGrid1, """select * from xtHeroArsenal where cpnyid = @parm1 and HeroID = @parm2 and ID lik" &
-        "e @parm3"", ""bpes.cpnyID""; 0; 0; 0; 0, ""bxtHero.ID""; 0; 0; 0; 0, ""bxtHeroArsenal." &
-        "ID""; 0; 0; 0; 1, ")
-        Me.DslGrid1.TabIndex = 2
+        Me.tArsenalHeroID_1.FieldName = """xtHeroArsenal.HeroID""; 0; 0; 0"
+        Me.tArsenalHeroID_1.Heading = "Hero ID"
+        Me.tArsenalHeroID_1.InGrid = False
+        Me.tArsenalHeroID_1.Level = "1,k"
+        Me.tArsenalHeroID_1.Location = New System.Drawing.Point(345, 3)
+        Me.tArsenalHeroID_1.Mask = "UUUUUUUUUU"
+        Me.tArsenalHeroID_1.Name = "tArsenalHeroID_1"
+        Me.tArsenalHeroID_1.Size = New System.Drawing.Size(94, 20)
+        Me.tArsenalHeroID_1.TabIndex = 8
+        Me.tArsenalHeroID_1.TextLength = 10
         '
         'Form1
         '
@@ -359,9 +361,9 @@
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
+        CType(Me.DslGrid1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel2.PerformLayout()
-        CType(Me.DslGrid1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -372,19 +374,19 @@
     Friend WithEvents Label2 As Label
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents DslMaskedText1 As Microsoft.Dynamics.SL.Controls.DSLMaskedText
-    Friend WithEvents DslMaskedText2 As Microsoft.Dynamics.SL.Controls.DSLMaskedText
+    Friend WithEvents tHeroID_0 As Microsoft.Dynamics.SL.Controls.DSLMaskedText
+    Friend WithEvents tHeroName_0 As Microsoft.Dynamics.SL.Controls.DSLMaskedText
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents DslMaskedText4 As Microsoft.Dynamics.SL.Controls.DSLMaskedText
-    Friend WithEvents DslMaskedText5 As Microsoft.Dynamics.SL.Controls.DSLMaskedText
-    Friend WithEvents DslCombo1 As Microsoft.Dynamics.SL.Controls.DSLCombo
-    Friend WithEvents DslMaskedText3 As Microsoft.Dynamics.SL.Controls.DSLMaskedText
-    Friend WithEvents DslMaskedText6 As Microsoft.Dynamics.SL.Controls.DSLMaskedText
-    Friend WithEvents DslMaskedText7 As Microsoft.Dynamics.SL.Controls.DSLMaskedText
+    Friend WithEvents tArsenalID_1 As Microsoft.Dynamics.SL.Controls.DSLMaskedText
+    Friend WithEvents tArsenalDescr_1 As Microsoft.Dynamics.SL.Controls.DSLMaskedText
+    Friend WithEvents cHeroType_0 As Microsoft.Dynamics.SL.Controls.DSLCombo
+    Friend WithEvents tArsenalProdClassID_1 As Microsoft.Dynamics.SL.Controls.DSLMaskedText
+    Friend WithEvents tArsenalUOM_1 As Microsoft.Dynamics.SL.Controls.DSLMaskedText
+    Friend WithEvents tArsenalHeroID_1 As Microsoft.Dynamics.SL.Controls.DSLMaskedText
     Friend WithEvents DslGrid1 As Microsoft.Dynamics.SL.Controls.DSLGrid
 #End Region
 End Class
