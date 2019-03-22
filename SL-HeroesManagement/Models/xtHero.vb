@@ -1,6 +1,6 @@
 ﻿
 '------------------------------------------------------------------------------
-' <copyright file="xtHero.sdo.vb" company="Microsoft">
+' <copyright file="xthero.sdo.vb" company="Microsoft">
 '     Copyright (c) Microsoft Corporation.  All rights reserved.
 ' </copyright>
 '------------------------------------------------------------------------------
@@ -8,9 +8,9 @@
 Option Strict Off
 Option Explicit On
 Imports Solomon.Kernel
-Module sdoxtHero
+Module sdoxthero
 
-    Public Class xtHero
+    Public Class xthero
         Inherits SolomonDataObject
 
         <
@@ -70,6 +70,6 @@ Module sdoxtHero
 
         End Property
     End Class
-    Public bxtHero As xtHero = New xtHero, nxtHero As xtHero = New xtHero
-    Public Csr_xtHero As Integer, Mem_xtHero As Integer
+    Public bxthero As xthero = New xthero, nxthero As xthero = New xthero
+    Public Csr_xthero As Integer, Mem_xthero As Integer
 End Module

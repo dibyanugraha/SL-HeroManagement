@@ -21,12 +21,12 @@ Module BufferTable
         <
         DataBinding(PropertyIndex:=1, StringSize:=10)
         >
-        Public Property Companyid() As String
+        Public Property CompanyID() As String
             Get
-                Return Me.GetPropertyValue("Companyid")
+                Return Me.GetPropertyValue("CompanyID")
             End Get
             Set(ByVal value As String)
-                Me.SetPropertyValue("Companyid", value)
+                Me.SetPropertyValue("CompanyID", value)
             End Set
         End Property
     End Class
