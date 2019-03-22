@@ -13,6 +13,7 @@ Option Strict Off
 Friend Class Form1
     Inherits System.Windows.Forms.Form
 
+    Private sqlstr As String
     Protected m_IsInitializing As Boolean
     Protected ReadOnly Property IsInitializing() As Boolean
         Get
@@ -57,5 +58,23 @@ Friend Class Form1
         End If
     End Sub
 
-    Private sqlstr As String
+    Private Sub tArsenalID_1_Leave(sender As Object, e As EventArgs) Handles tArsenalID_1.Leave
+        sqlstr = "select * from inventory" _
+            + " where invtid = " + SParm(tArsenalID_1.Text)
+
+        serr = SqlFetch1(Csr_Inventory, sqlstr, bInventory)
+        If serr = 0 Then
+            bxtHeroArsenal.Description = bInventory.Descr
+            bxtHeroArsenal.ProdClassID = bInventory.ClassID
+            bxtHeroArsenal.UOM = bInventory.StkUnit
+            Call DispFields(Me, PNULL, PNULL)
+        End If
+    End Sub
+
+    Private Sub DslGrid1_LineGotFocusEvent(ByRef maintflg As Short, ByRef retval As Short) Handles DslGrid1.LineGotFocusEvent
+        If maintflg = NEWROW Then
+            bxtHeroArsenal.CpnyID = bpes.CpnyID
+            bxtHeroArsenal.HeroID = bxthero.HeroID
+        End If
+    End Sub
 End Class

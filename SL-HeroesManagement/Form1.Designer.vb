@@ -212,7 +212,7 @@
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.73913!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.26087!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 14.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 19.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label4, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label5, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label6, 0, 2)
@@ -239,7 +239,7 @@
         Me.Label4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label4.Location = New System.Drawing.Point(3, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(133, 62)
+        Me.Label4.Size = New System.Drawing.Size(132, 62)
         Me.Label4.TabIndex = 0
         Me.Label4.Text = "Arsenal ID"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -250,7 +250,7 @@
         Me.Label5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label5.Location = New System.Drawing.Point(3, 62)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(133, 62)
+        Me.Label5.Size = New System.Drawing.Size(132, 62)
         Me.Label5.TabIndex = 1
         Me.Label5.Text = "Description"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -261,7 +261,7 @@
         Me.Label6.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label6.Location = New System.Drawing.Point(3, 124)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(133, 52)
+        Me.Label6.Size = New System.Drawing.Size(132, 52)
         Me.Label6.TabIndex = 2
         Me.Label6.Text = "Product Class ID"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -272,7 +272,7 @@
         Me.Label7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label7.Location = New System.Drawing.Point(3, 176)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(133, 56)
+        Me.Label7.Size = New System.Drawing.Size(132, 56)
         Me.Label7.TabIndex = 3
         Me.Label7.Text = "Unit of Measure"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -283,11 +283,11 @@
         Me.tArsenalID_1.FieldName = """bxtHeroArsenal.ArsenalID""; 0; 0; 0"
         Me.tArsenalID_1.Heading = "Arsenal ID"
         Me.tArsenalID_1.Level = "1,k"
-        Me.tArsenalID_1.Location = New System.Drawing.Point(142, 3)
+        Me.tArsenalID_1.Location = New System.Drawing.Point(141, 3)
         Me.tArsenalID_1.Mask = "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
         Me.tArsenalID_1.Name = "tArsenalID_1"
         Me.tArsenalID_1.PV = """inventory_all"", "
-        Me.tArsenalID_1.Size = New System.Drawing.Size(294, 56)
+        Me.tArsenalID_1.Size = New System.Drawing.Size(290, 56)
         Me.tArsenalID_1.TabIndex = 4
         Me.tArsenalID_1.TextLength = 30
         '
@@ -297,10 +297,10 @@
         Me.tArsenalDescr_1.FieldName = """bxtHeroArsenal.Description""; 0; 0; 0"
         Me.tArsenalDescr_1.Heading = "Description"
         Me.tArsenalDescr_1.Level = "1"
-        Me.tArsenalDescr_1.Location = New System.Drawing.Point(142, 65)
+        Me.tArsenalDescr_1.Location = New System.Drawing.Point(141, 65)
         Me.tArsenalDescr_1.Mask = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
         Me.tArsenalDescr_1.Name = "tArsenalDescr_1"
-        Me.tArsenalDescr_1.Size = New System.Drawing.Size(294, 56)
+        Me.tArsenalDescr_1.Size = New System.Drawing.Size(290, 56)
         Me.tArsenalDescr_1.TabIndex = 5
         Me.tArsenalDescr_1.TextLength = 60
         '
@@ -310,11 +310,11 @@
         Me.tArsenalProdClassID_1.FieldName = """bxtHeroArsenal.ProdClassID""; 0; 0; 0"
         Me.tArsenalProdClassID_1.Heading = "Product Class ID"
         Me.tArsenalProdClassID_1.Level = "1"
-        Me.tArsenalProdClassID_1.Location = New System.Drawing.Point(142, 127)
+        Me.tArsenalProdClassID_1.Location = New System.Drawing.Point(141, 127)
         Me.tArsenalProdClassID_1.Mask = "UUUUUU"
         Me.tArsenalProdClassID_1.Name = "tArsenalProdClassID_1"
         Me.tArsenalProdClassID_1.PV = """productclass_all"","
-        Me.tArsenalProdClassID_1.Size = New System.Drawing.Size(294, 46)
+        Me.tArsenalProdClassID_1.Size = New System.Drawing.Size(290, 46)
         Me.tArsenalProdClassID_1.TabIndex = 6
         Me.tArsenalProdClassID_1.TextLength = 6
         '
@@ -324,12 +324,12 @@
         Me.tArsenalUOM_1.FieldName = """bxtHeroArsenal.UOM""; 0; 0; 0"
         Me.tArsenalUOM_1.Heading = "Unit of Measure"
         Me.tArsenalUOM_1.Level = "1"
-        Me.tArsenalUOM_1.Location = New System.Drawing.Point(142, 179)
+        Me.tArsenalUOM_1.Location = New System.Drawing.Point(141, 179)
         Me.tArsenalUOM_1.Mask = "UUUUUU"
         Me.tArsenalUOM_1.Name = "tArsenalUOM_1"
         Me.tArsenalUOM_1.PV = """StkUnit_Global_Class_Item"", ""binventory.invtid""; 0; 0; 0; 0, ""binventory.classid" &
     """; 0; 0; 0; 0,"
-        Me.tArsenalUOM_1.Size = New System.Drawing.Size(294, 50)
+        Me.tArsenalUOM_1.Size = New System.Drawing.Size(290, 50)
         Me.tArsenalUOM_1.TabIndex = 7
         Me.tArsenalUOM_1.TextLength = 6
         '
@@ -339,7 +339,7 @@
         Me.tArsenalHeroID_1.Heading = "Hero ID"
         Me.tArsenalHeroID_1.InGrid = False
         Me.tArsenalHeroID_1.Level = "1,k"
-        Me.tArsenalHeroID_1.Location = New System.Drawing.Point(442, 3)
+        Me.tArsenalHeroID_1.Location = New System.Drawing.Point(437, 3)
         Me.tArsenalHeroID_1.Mask = "UUUUUUUUUU"
         Me.tArsenalHeroID_1.Name = "tArsenalHeroID_1"
         Me.tArsenalHeroID_1.Size = New System.Drawing.Size(9, 20)
