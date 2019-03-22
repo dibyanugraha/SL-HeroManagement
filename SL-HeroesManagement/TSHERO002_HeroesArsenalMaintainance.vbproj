@@ -125,10 +125,12 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <None Include="PV\PV_hero.csv" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="SQL\create_heroarsenal_table.sql" />
-    <Content Include="SQL\create_heroes_table.sql" />
+    <Content Include="SQL\create_table_heroarsenal.sql" />
+    <Content Include="SQL\create_table_hero.sql" />
+    <Content Include="SQL\create_sp_hero.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

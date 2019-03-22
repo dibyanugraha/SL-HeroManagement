@@ -16,14 +16,14 @@ Module sdoxthero
         <
         DataBinding(PropertyIndex:=0, StringSize:=10)
         >
-        Public Property ID() As String
+        Public Property HeroID() As String
 
             Get
-                Return Me.GetPropertyValue("ID")
+                Return Me.GetPropertyValue("HeroID")
             End Get
 
             Set(ByVal setval As String)
-                Me.SetPropertyValue("ID", setval)
+                Me.SetPropertyValue("HeroID", setval)
             End Set
 
         End Property

@@ -86,8 +86,8 @@
         Me.DslGrid1.Name = "DslGrid1"
         Me.DslGrid1.OcxState = CType(resources.GetObject("DslGrid1.OcxState"), System.Windows.Forms.AxHost.State)
         Me.DslGrid1.Size = New System.Drawing.Size(75, 23)
-        Me.DslGrid1.SetSLDBNav(Me.DslGrid1, """select * from xtHero where CpnyID = @parm1 and ID like @parm2"", ""bpes.cpnyid""; 0" &
-        "; 0; 0; 0, ""bxthero.ID""; 0; 0; 0; 1, ")
+        Me.DslGrid1.SetSLDBNav(Me.DslGrid1, """select * from xtHero where CpnyID = @parm1 and HeroID like @parm2"", ""bpes.cpnyid" &
+        """; 0; 0; 0; 0, ""bxthero.HeroID""; 0; 0; 0; 1, ")
         Me.DslGrid1.TabIndex = 1
         '
         'TableLayoutPanel1
@@ -148,7 +148,7 @@
         '
         Me.DslMaskedText1.Blankerr = True
         Me.DslMaskedText1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DslMaskedText1.FieldName = """bxtHero.ID""; 0; 0; 0"
+        Me.DslMaskedText1.FieldName = """bxtHero.HeroID""; 0; 0; 0"
         Me.DslMaskedText1.Heading = "Hero ID"
         Me.DslMaskedText1.Level = "0,k"
         Me.DslMaskedText1.Location = New System.Drawing.Point(58, 3)

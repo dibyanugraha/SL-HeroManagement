@@ -151,11 +151,12 @@
         '
         Me.tHeroID_0.Blankerr = True
         Me.tHeroID_0.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.tHeroID_0.FieldName = """bxtHero.ID""; 0; 0; 0"
+        Me.tHeroID_0.FieldName = """bxtHero.HeroID""; 0; 0; 0"
         Me.tHeroID_0.Level = "0,k"
         Me.tHeroID_0.Location = New System.Drawing.Point(77, 3)
         Me.tHeroID_0.Mask = "UUUUUUUUUU"
         Me.tHeroID_0.Name = "tHeroID_0"
+        Me.tHeroID_0.PV = """xpHero_all"", ""bpes.cpnyID""; 0; 0; 0; 0, "
         Me.tHeroID_0.Size = New System.Drawing.Size(374, 37)
         Me.tHeroID_0.TabIndex = 3
         Me.tHeroID_0.TextLength = 10
@@ -202,8 +203,8 @@
         Me.DslGrid1.OcxState = CType(resources.GetObject("DslGrid1.OcxState"), System.Windows.Forms.AxHost.State)
         Me.DslGrid1.Size = New System.Drawing.Size(75, 23)
         Me.DslGrid1.SetSLDBNav(Me.DslGrid1, """select * from xtHeroArsenal where cpnyid = @parm1 and HeroID = @parm2 and ID lik" &
-        "e @parm3"", ""bpes.cpnyID""; 0; 0; 0; 0, ""bxtHero.ID""; 0; 0; 0; 0, ""bxtHeroArsenal." &
-        "ID""; 0; 0; 0; 1, " & Global.Microsoft.VisualBasic.ChrW(0))
+        "e @parm3"", ""bpes.cpnyID""; 0; 0; 0; 0, ""bxtHero.HeroID""; 0; 0; 0; 0, ""bxtHeroArse" &
+        "nal.ID""; 0; 0; 0; 1, ")
         Me.DslGrid1.TabIndex = 2
         '
         'TableLayoutPanel2
@@ -211,7 +212,7 @@
         Me.TableLayoutPanel2.ColumnCount = 3
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.73913!))
         Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.26087!))
-        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 113.0!))
         Me.TableLayoutPanel2.Controls.Add(Me.Label4, 0, 0)
         Me.TableLayoutPanel2.Controls.Add(Me.Label5, 0, 1)
         Me.TableLayoutPanel2.Controls.Add(Me.Label6, 0, 2)
@@ -286,7 +287,8 @@
         Me.tArsenalID_1.Location = New System.Drawing.Point(111, 3)
         Me.tArsenalID_1.Mask = "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
         Me.tArsenalID_1.Name = "tArsenalID_1"
-        Me.tArsenalID_1.Size = New System.Drawing.Size(227, 56)
+        Me.tArsenalID_1.PV = """inventory_all"""
+        Me.tArsenalID_1.Size = New System.Drawing.Size(226, 56)
         Me.tArsenalID_1.TabIndex = 4
         Me.tArsenalID_1.TextLength = 30
         '
@@ -299,7 +301,7 @@
         Me.tArsenalDescr_1.Location = New System.Drawing.Point(111, 65)
         Me.tArsenalDescr_1.Mask = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
         Me.tArsenalDescr_1.Name = "tArsenalDescr_1"
-        Me.tArsenalDescr_1.Size = New System.Drawing.Size(227, 56)
+        Me.tArsenalDescr_1.Size = New System.Drawing.Size(226, 56)
         Me.tArsenalDescr_1.TabIndex = 5
         Me.tArsenalDescr_1.TextLength = 60
         '
@@ -312,7 +314,8 @@
         Me.tArsenalProdClassID_1.Location = New System.Drawing.Point(111, 127)
         Me.tArsenalProdClassID_1.Mask = "UUUUUU"
         Me.tArsenalProdClassID_1.Name = "tArsenalProdClassID_1"
-        Me.tArsenalProdClassID_1.Size = New System.Drawing.Size(227, 46)
+        Me.tArsenalProdClassID_1.PV = """productclass_all"","
+        Me.tArsenalProdClassID_1.Size = New System.Drawing.Size(226, 46)
         Me.tArsenalProdClassID_1.TabIndex = 6
         Me.tArsenalProdClassID_1.TextLength = 6
         '
@@ -324,7 +327,9 @@
         Me.tArsenalUOM_1.Location = New System.Drawing.Point(111, 179)
         Me.tArsenalUOM_1.Mask = "UUUUUU"
         Me.tArsenalUOM_1.Name = "tArsenalUOM_1"
-        Me.tArsenalUOM_1.Size = New System.Drawing.Size(227, 50)
+        Me.tArsenalUOM_1.PV = """StkUnit_Global_Class_Item"", ""binventory.invtid""; 0; 0; 0; 0, ""binventory.classid" &
+    """; 0; 0; 0; 0,"
+        Me.tArsenalUOM_1.Size = New System.Drawing.Size(226, 50)
         Me.tArsenalUOM_1.TabIndex = 7
         Me.tArsenalUOM_1.TextLength = 6
         '
@@ -334,7 +339,7 @@
         Me.tArsenalHeroID_1.Heading = "Hero ID"
         Me.tArsenalHeroID_1.InGrid = False
         Me.tArsenalHeroID_1.Level = "1,k"
-        Me.tArsenalHeroID_1.Location = New System.Drawing.Point(344, 3)
+        Me.tArsenalHeroID_1.Location = New System.Drawing.Point(343, 3)
         Me.tArsenalHeroID_1.Mask = "UUUUUUUUUU"
         Me.tArsenalHeroID_1.Name = "tArsenalHeroID_1"
         Me.tArsenalHeroID_1.Size = New System.Drawing.Size(94, 20)

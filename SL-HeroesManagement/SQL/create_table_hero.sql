@@ -11,7 +11,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [dbo].[xtHero](
-	[ID] [char](10) NOT NULL,
+	[HeroID] [char](10) NOT NULL,
 	[Name] [char](50) NOT NULL,
 	[Type] [char](1) NOT NULL,
 	[CpnyID] [char](10) NOT NULL,
@@ -20,5 +20,5 @@ CREATE TABLE [dbo].[xtHero](
 GO
 
 
- CREATE  UNIQUE  CLUSTERED  INDEX [xtHero0] ON [dbo].[xtHero]([ID]) ON [PRIMARY]
+ CREATE  UNIQUE  CLUSTERED  INDEX [xtHero0] ON [dbo].[xtHero]([HeroID]) ON [PRIMARY]
 GO

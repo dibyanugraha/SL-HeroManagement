@@ -1,0 +1,1 @@
+"xpHero_ALL","","","Select * From xtHero Where CpnyID = @Parm1 and HeroID like @parm2 order by CpnyID, HeroID asc","Heroes","xtHero.HeroID;Hero ID;0;0","xtHero.Name;Name;0;0"

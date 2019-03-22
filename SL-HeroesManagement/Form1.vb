@@ -45,4 +45,8 @@ Friend Class Form1
     Private Sub Form1_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
         'Call SetProps(Me, cHeroType_0, cHeroType_0, PROP_CUSTLIST, "W;Wizard,K;Knight,B;Barbarian,T;Thief")
     End Sub
+
+    Private Sub tHeroID_0_ChkEvent(ByRef ChkStrg As String, ByRef RetVal As Short) Handles tHeroID_0.ChkEvent
+
+    End Sub
 End Class
