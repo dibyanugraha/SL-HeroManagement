@@ -47,6 +47,15 @@ Friend Class Form1
     End Sub
 
     Private Sub tHeroID_0_ChkEvent(ByRef ChkStrg As String, ByRef RetVal As Short) Handles tHeroID_0.ChkEvent
+        sqlstr = "select * from xtHero" _
+            + " where Heroid = " + SParm(tHeroID_0.Text)
 
+        serr = SqlFetch1(Csr_xthero, sqlstr, bxthero)
+        If serr = 0 Then
+            tHeroName_0.Text = bxthero.Name
+            Call DispFields(Me, PNULL, PNULL)
+        End If
     End Sub
+
+    Private sqlstr As String
 End Class

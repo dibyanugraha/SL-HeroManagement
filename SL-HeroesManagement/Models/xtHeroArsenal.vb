@@ -30,14 +30,14 @@ Module sdoxtHeroArsenal
         <
         DataBinding(PropertyIndex:=1, StringSize:=30)
         >
-        Public Property ID() As String
+        Public Property ArsenalID() As String
 
             Get
-                Return Me.GetPropertyValue("ID")
+                Return Me.GetPropertyValue("ArsenalID")
             End Get
 
             Set(ByVal setval As String)
-                Me.SetPropertyValue("ID", setval)
+                Me.SetPropertyValue("ArsenalID", setval)
             End Set
 
         End Property
